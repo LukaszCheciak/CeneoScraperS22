@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 import requests
 import json
 
-url = "https://www.ceneo.pl/63490289#tab=reviews"
+url_number = input() 
+url = "https://www.ceneo.pl/"+url_number+"#tab=reviews"
 all_opinions = []
 while(url):
     response = requests.get(url)
